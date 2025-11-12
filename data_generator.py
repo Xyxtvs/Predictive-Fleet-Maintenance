@@ -11,10 +11,10 @@ from typing import List, Tuple
 
 # Database connection
 DB_CONFIG = {
-    'host': 'ep-weathered-heart-adxqd82a-pooler.c-2.us-east-1.aws.neon.tech',
-    'database': 'neondb',
-    'user': 'neondb_owner',
-    'password': 'npg_Rrh0OAMk7VFi',
+    'host': '',
+    'database': '',
+    'user': '',
+    'password': '',
     'sslmode': 'require'
 }
 
