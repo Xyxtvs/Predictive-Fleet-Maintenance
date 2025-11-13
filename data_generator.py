@@ -8,16 +8,19 @@ import random
 from datetime import datetime, timedelta
 import numpy as np
 from typing import List, Tuple
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # Database connection
 DB_CONFIG = {
-    'host': '',
-    'database': '',
-    'user': '',
-    'password': '',
+    'host': os.getenv('NEON_HOST'),
+    'database': os.getenv('NEON_DATABASE'),
+    'user': os.getenv('NEON_USER'),
+    'password': os.getenv('NEON_PASSWORD'),
     'sslmode': 'require'
 }
-
 # Fleet composition
 TRUCK_MAKES = [
     ('Freightliner', 'Cascadia'),
